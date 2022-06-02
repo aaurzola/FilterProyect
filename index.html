@@ -11,13 +11,8 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-
-    <h1>Selecciona los terminos de busqueda</h1>
-
+    <h1 id="title">Selecciona los terminos de busqueda</h1>
     <div class="contenedor">
-
-        
-
         <form id="buscador">
             <div class="row">
                 <div class="three columns">
@@ -96,16 +91,29 @@
                 </div>
             </div>
         </form>
-
-
-        <h1>Resultados</h1>
-        <div id="resultado"></div>
+        <div id="button-container">
+            <button id="reset-button">limpiar</button>
+        </div>
+        <div id="results-section">
+            <h1 id="results-counter"></h1>
+        </div>
+        
+        <div id="resultado">
+            <table id="result-table" width="100%">
+                <tr class="table-header">
+                    <td>Marca</td>
+                    <td>Year</td>
+                    <td>Precio</td>
+                    <td>Cantidad de Puertas</td>
+                    <td>Color</td>
+                    <td>Transmision</td>
+                </tr>
+                
+            </table>
+        </div>
     </div>
-
     <p class="sitio-web">Ejercicio realizado por @aaurzola</p>
-
     <script src="js/db.js"></script>
     <script src="js/app.js"></script>
-    
 </body>
 </html>

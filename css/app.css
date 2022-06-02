@@ -1,5 +1,7 @@
 body {
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background: #c94b4b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Staatliches', cursive;
 }
 html {
@@ -11,7 +13,12 @@ h1 {
     padding: 3rem 0;
     margin: 0;
 }
+#title {
+    color: white;
+}
+
 .contenedor {
+    border-radius: 10px;
     background-color: white;
     max-width: 1200px;
     margin: 0 auto;
@@ -27,7 +34,6 @@ form {
     margin: 0 auto;
     padding: 4rem;
     background: white;
-    margin-bottom: 10rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 #app p{
@@ -68,4 +74,30 @@ form {
 }
 .sitio-web:hover {
     color: white;
+}
+
+/* custom css @aaurzola */
+td {
+    text-align: center;
+    font-weight: 400;
+    border-style: none;
+}
+
+.table-header {
+    color: #4b134f;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#results-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
